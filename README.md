@@ -23,11 +23,13 @@ Standard Scaling of all feature vectors (No Improvement).
 Principal Component Analysis (No Improvement).
 
 ### 2.EDA:
-Summary Statistics and Profile Reporting using pandas_profiling
-Correlation Heat maps
-Other majority values for each feature were obtained by value_counts to gauge the distribution of variables among each feature in the dataset.
+
+* Summary Statistics and Profile Reporting using pandas_profiling
+* Correlation Heat maps
+* Other majority values for each feature were obtained by value_counts to gauge the distribution of variables among each feature in the dataset.
 
 ### 3.Model Building:
+
 The problem statement requires us to predict the probability (i.e., between 0 & 1) of the ‘is_goal’ feature vector. This is in essence a classification problem. The probabilities can be found using the ‘predict_proba’ method.
 Almost all classification models were tested with average scores.
 Hyperparameter tuning was done with GridSearchCV for RandomForestClassifier but yielded mediocre results again.
@@ -35,6 +37,7 @@ Second Iteration:
 Stratified K Fold Cross Validation was used which resulted in minor performance improvement. But the requisite number of target variable probabilities (for is_goal) were not obtained since StratifiedKFold doesn’t allow for floating point parameter for test_size segregation.
 
 ### 4.Further Work:
+
 Considerations for possible score improvement:
 •	Custom Feature Engineering
 •	XGBoost, RFE, Stability Selection for Feature Importance
