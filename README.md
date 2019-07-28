@@ -12,15 +12,15 @@ Some feature vectors were eliminated since they had nonsensical values especiall
 * Data Preprocessing: 
 Some of the values for shot_id_number were missing; they were imputed with the increment of the index variable. The original dataframe was split into two separate dataframes one with non-NULL values (df1) of is_goal and one with NULL values of is_goal(df2). Df1 has around ~24k values. The test size for train_test_split was set as the size of df2. Df2 was to be the main dataframe for all analysis since all values of df2.is_goal are non-NULL in nature. The relevant categorical features were label encoded in order to pass it through the various classification algorithms. 
 
-Some other methods tried out: 
+* Some other methods tried out: 
 
-One Hot Encoding on categorical feature vectors (Minor negligible Improvement).
+      * One Hot Encoding v Label Encoding on categorical feature vectors (Minor negligible Improvement).
 
-Polynomial Expansion of the resultant dataframe of predictor features (No Improvement). 
+      * Polynomial Expansion of the resultant dataframe of predictor features (No Improvement).   
 
-Standard Scaling of all feature vectors (No Improvement). 
+      * Standard Scaling of all feature vectors (No Improvement). 
 
-Principal Component Analysis (No Improvement).
+      * Principal Component Analysis (No Improvement).
 
 ### 2.EDA:
 
