@@ -6,8 +6,9 @@ ZS Data Science Challenge 2019
 
 ### 1.Data Preparation:
 
-* Quality Checks: 
-Some feature vectors were eliminated since they had nonsensical values especially the ones suffixed with ‘.1’ (knockout_match.1 and     remaining_min.1). Other features were eliminated based on common sense relevance to the current problem. Some features like team_name and game_season have inaccurate values. For e.g., Ronaldo wasn’t playing professionally during the 1999 – 2000 season, yet the data said so. Also, during the 2011 – 12 season, he was playing for Real Madrid but the data says Manchester United. These kinds of features were eliminated from the get go.
+Quality Checks: 
+
+* Imputation of 'shot_id_number' since it is a critical element in all the entities of the feature tools model.
 
 * Data Preprocessing: 
 Some of the values for shot_id_number were missing; they were imputed with the increment of the index variable. The original dataframe was split into two separate dataframes one with non-NULL values (df1) of is_goal and one with NULL values of is_goal(df2). Df1 has around ~24k values. The test size for train_test_split was set as the size of df2. Df2 was to be the main dataframe for all analysis since all values of df2.is_goal are non-NULL in nature. The relevant categorical features were label encoded in order to pass it through the various classification algorithms. 
