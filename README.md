@@ -40,9 +40,15 @@ Stratified K Fold Cross Validation was used which resulted in minor performance 
 ### 4.Further Work:
 
 Considerations for possible score improvement:
+
 •	Custom Feature Engineering
+
 •	XGBoost, RFE, Stability Selection for Feature Importance
+
 •	Anomaly Detection and Removal
+
 •	Imputation using ML Models
+
 •	Feature Hashing Schemes
+
 •	Neural Net
